@@ -1,33 +1,56 @@
+:root {
+   --main-content-width: 900px;
+}
+
 body {
    font-family: Roboto;
    padding: 0;
    margin: 0;
    display: flex;
    flex-direction: column;
+   justify-content: center;
 }
 
-a {
+a, .header {
    text-decoration: none;
+   font-size: 18px;
+   color: #e5e7eb;
 }
 
 .header {
-   font-size: 18px;
-   color: #e5e7eb;
    display:flex;
    justify-content: space-between;
+   padding: 40px;
+   width: var(--main-content-width);
 }
 
-.top-sextion {
+.top-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #1F2937;
+   flex-wrap: wrap;
+}
+
+.intro {
    display: flex;
    justify-content: center;
 }
-.intro-signup .text {
+.intro .content {
+   width: 450px;
+}
+.intro .text {
    font-size: 18px;
    color: #e5e7eb;
 }
 
+.intro img {
+   width: 450px;
+}
+
 .header, .footer, .top-section {
-   background-color: #1F2937;
+   /* float: left;
+   min-width: 100%; */
 }
 
 .quote-section {
@@ -36,7 +59,11 @@ a {
 
 button {
    background-color: #3882F6;
-   color: white
+   color: white;
+   border-radius: 4px;
+   padding: 4px 16px 4px 16px;
+   box-shadow: none;
+   border: none;
 }
 
 h1 {
